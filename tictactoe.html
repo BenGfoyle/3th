@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="3tStyleSheet.css">
+
+<meta charset="utf-8">
+
+<header>
+  <title>3th</title>
+</header>
+<meta name="Ben Guilfoyle" content="3th - Ethereum Tic Tac Toe">
+</head>
+
+<body>
+  <div class="grid-container">
+  <div id = "1" class="grid-item" class = "square" onclick = "makeMove(this.id)"></div>
+  <div id = "2" class="grid-item" class = "square" onclick = "makeMove(this.id)"></div>
+  <div id = "3" class="grid-item" class = "square" onclick = "makeMove(this.id)"></div>
+  <div id = "4" class="grid-item" class = "square" onclick = "makeMove(this.id)"></div>
+  <div id = "5" class="grid-item" class = "square" onclick = "makeMove(this.id)"></div>
+  <div id = "6" class="grid-item" class = "square" onclick = "makeMove(this.id)"></div>
+  <div id = "7" class="grid-item" class = "square" onclick = "makeMove(this.id)"></div>
+  <div id = "8" class="grid-item" class = "square" onclick = "makeMove(this.id)"></div>
+  <div id = "9" class="grid-item" class = "square" onclick = "makeMove(this.id)"></div>
+</div>
+
+<div id = "turn"></div>
+
+</body>
+
+<script>
+var turnCount = 0;
+
+function makeMove(position){
+  if(document.getElementById(position).innerHTML == ""){
+    if(turnCount%2 == 0){
+      document.getElementById(position).innerHTML = "x";
+    }
+    else{
+      document.getElementById(position).innerHTML = "o";
+    }
+    turnCount++;
+  }
+}
+</script>
+</html>

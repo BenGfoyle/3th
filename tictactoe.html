@@ -12,36 +12,23 @@
 <meta name="Ben Guilfoyle" content="3th - Ethereum Tic Tac Toe">
 </head>
 
-<body>
-  <div class="grid-container">
-  <div id = "1" class="grid-item" class = "square" onclick = "makeMove(this.id)"></div>
-  <div id = "2" class="grid-item" class = "square" onclick = "makeMove(this.id)"></div>
-  <div id = "3" class="grid-item" class = "square" onclick = "makeMove(this.id)"></div>
-  <div id = "4" class="grid-item" class = "square" onclick = "makeMove(this.id)"></div>
-  <div id = "5" class="grid-item" class = "square" onclick = "makeMove(this.id)"></div>
-  <div id = "6" class="grid-item" class = "square" onclick = "makeMove(this.id)"></div>
-  <div id = "7" class="grid-item" class = "square" onclick = "makeMove(this.id)"></div>
-  <div id = "8" class="grid-item" class = "square" onclick = "makeMove(this.id)"></div>
-  <div id = "9" class="grid-item" class = "square" onclick = "makeMove(this.id)"></div>
+<h1>3TH</h1>
+
+<div class="topnav">
+  <!-- Name of games with repective size of boards -->
+  <h4 value = "3" onclick = "buildGrid(this.value)">Tic-Tac-Toe</h4>
+  <h4 value = "19"  onclick = "buildGrid(this.value)">Go</h4>
+  <h4 value = "8"  onclick = "buildGrid(this.value)">Chess</h4>
 </div>
+
+<body>
+  <div class="grid-container" id = "gameSpace">
+  </div>
 
 <div id = "turn"></div>
 
 </body>
-
-<script>
-var turnCount = 0;
-
-function makeMove(position){
-  if(document.getElementById(position).innerHTML == ""){
-    if(turnCount%2 == 0){
-      document.getElementById(position).innerHTML = "x";
-    }
-    else{
-      document.getElementById(position).innerHTML = "o";
-    }
-    turnCount++;
-  }
-}
-</script>
 </html>
+
+<script src = "makeMove.js"></script>
+<script src = "buildGrid.js"></script>

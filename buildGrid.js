@@ -4,11 +4,7 @@ function buildGrid(size){//this function generates a grid of size relative to th
     var tr = document.createElement('tr');
     for (var j = 1; j < size; j++) {
         var td = document.createElement('td');
-        if (i%2 == j%2) {
-            td.className = "white";
-        } else {
-            td.className = "black";
-        }
+        td.className = "white";
         tr.appendChild(td);
     }
     table.appendChild(tr);

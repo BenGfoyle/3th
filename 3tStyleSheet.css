@@ -1,18 +1,15 @@
-.grid-container {
-  display: grid;
-  padding: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
 .topnav {
   position: relative;
   overflow: hidden;
   background-color: #333;
   width: 100%;
+}
+.tableInside{
+  border: 1px solid black;
+}
+
+.tableOutside{
+  border: 1px solid black;
+  width: 100px;
+  height:100px
 }
